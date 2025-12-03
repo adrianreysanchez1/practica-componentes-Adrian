@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Catálogo de cursos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Tailwind CDN (puedes quitarlo si ya lo tienes en tu proyecto) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-100 py-10">
+<div class="max-w-5xl mx-auto px-4">
+  <header class="mb-8 flex items-center justify-between gap-4">
+    <div>
+      <h1 class="text-3xl font-bold">Catálogo de cursos</h1>
+      <p class="text-slate-600 text-sm">
+        Lista de cursos disponibles.
+      </p>
+    </div>
+    <button class="px-4 py-2 rounded-md bg-emerald-600 text-white text-sm font-medium hover:bg-emerald-700">
+      Nuevo curso
+    </button>
+  </header>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 flex flex-col">
+      <div class="flex items-start justify-between mb-3">
+        <h2 class="text-lg font-semibold">React desde cero</h2>
+        <span class="px-2 py-1 text-xs font-semibold rounded-full bg-emerald-100 text-emerald-700">
+              Popular
+            </span>
+      </div>
+      <p class="text-sm text-slate-600 mb-4">
+        Aprende los fundamentos de React, componentes, props y estado.
+      </p>
+      <div class="mt-auto flex items-center justify-between">
+        <span class="text-base font-bold text-slate-900">49,99 €</span>
+        <button class="px-3 py-2 rounded-md bg-blue-600 text-white text-xs font-medium hover:bg-blue-700">
+          Ver detalles
+        </button>
+      </div>
+    </article>
+
+    <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 flex flex-col">
+      <div class="flex items-start justify-between mb-3">
+        <h2 class="text-lg font-semibold">Tailwind CSS práctico</h2>
+        <span class="px-2 py-1 text-xs font-semibold rounded-full bg-sky-100 text-sky-700">
+              Nuevo
+            </span>
+      </div>
+      <p class="text-sm text-slate-600 mb-4">
+        Utiliza utilidades de Tailwind para maquetar interfaces rápidas.
+      </p>
+      <div class="mt-auto flex items-center justify-between">
+        <span class="text-base font-bold text-slate-900">39,99 €</span>
+        <button class="px-3 py-2 rounded-md bg-blue-600 text-white text-xs font-medium hover:bg-blue-700">
+          Ver detalles
+        </button>
+      </div>
+    </article>
+
+    <article class="bg-white rounded-xl shadow-sm border border-slate-200 p-5 flex flex-col">
+      <div class="flex items-start justify-between mb-3">
+        <h2 class="text-lg font-semibold">JavaScript avanzado</h2>
+        <span class="px-2 py-1 text-xs font-semibold rounded-full bg-amber-100 text-amber-700">
+              Intermedio
+            </span>
+      </div>
+      <p class="text-sm text-slate-600 mb-4">
+        Profundiza en asincronía, closures y patrones de diseño.
+      </p>
+      <div class="mt-auto flex items-center justify-between">
+        <span class="text-base font-bold text-slate-900">59,99 €</span>
+        <button class="px-3 py-2 rounded-md bg-blue-600 text-white text-xs font-medium hover:bg-blue-700">
+          Ver detalles
+        </button>
+      </div>
+    </article>
+  </div>
+</div>
+</body>
+</html>
