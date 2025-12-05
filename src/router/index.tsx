@@ -1,11 +1,9 @@
-import DetalleAlumno from "@/pages/DetalleAlumno.tsx";
-import ListadoAlumnos from "@/pages/ListadoAlumnos.tsx";
-import PageNotFound from "@/pages/PageNotFound.tsx";
+import GaleriaBotones from "@/Pages/GaleriaBotones";
 import {createBrowserRouter} from "react-router-dom";
 
 
 
 export const router = createBrowserRouter([
-   // {path: "*", element: <PageNotFound />},
+   {path: "/" , element: <GaleriaBotones/>},
 
 ]);
