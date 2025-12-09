@@ -29,17 +29,29 @@ export default function GaleriaBotones(){
             <section className="space-y-3">
                 <h2 className="font-semibold">Botones secundarios</h2>
                 <div className="flex flex-wrap gap-3">
-                    <Boton modo="secundary" titulo="Cancelar"/>
+                    <Boton modo="secundary" titulo="Cancelar" handleClick={(e =>{
+                        e.preventDefault();
+                        alert("Se ha cancelado");
+                    })}/>
 
-                    <Boton modo="secundary" titulo="Ver Detalles"/>
+                    <Boton modo="secundary" titulo="Ver Detalles" handleClick={(e =>{
+                        e.preventDefault();
+                        alert("Se ha agregado");
+                    })}/>
                 </div>
             </section>
 
             <section className="space-y-3">
                 <h2 className="font-semibold">Botones de peligro</h2>
                 <div className="flex flex-wrap gap-3">
-                    <Boton modo="danger" titulo="Eliminar"/>
-                    <Boton modo="danger" titulo="Borrar Cuenta"/>
+                    <Boton modo="danger" titulo="Eliminar" handleClick={(e =>{
+                        e.preventDefault();
+                        alert("Se ha eliminado");
+                    })}/>
+                    <Boton modo="danger" titulo="Borrar Cuenta" handleClick={(e =>{
+                        e.preventDefault();
+                        alert("Se ha borrado la cuenta");
+                    })}/>
                 </div>
             </section>
         </div>
